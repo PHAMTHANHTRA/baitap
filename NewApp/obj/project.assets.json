@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\NewApp\\NewApp.csproj",
+      "projectUniqueName": "C:\\Baithuchanh_PTPMQL\\NewApp\\NewApp.csproj",
       "projectName": "NewApp",
-      "projectPath": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\NewApp\\NewApp.csproj",
+      "projectPath": "C:\\Baithuchanh_PTPMQL\\NewApp\\NewApp.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\NewApp\\obj\\",
+      "outputPath": "C:\\Baithuchanh_PTPMQL\\NewApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

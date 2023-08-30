@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
+    "C:\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
+    "C:\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectUniqueName": "C:\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
         "projectName": "FirstWebMVC",
-        "projectPath": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectPath": "C:\\Baithuchanh_PTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\OneDrive\\Desktop\\Baithuchanh_PTPMQL\\FirstWebMVC\\obj\\",
+        "outputPath": "C:\\Baithuchanh_PTPMQL\\FirstWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
