@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DemoMVC.Controllers
+namespace FirstWebMVCMVC.Controllers
 {
     public class DemoController : Controller
     {
