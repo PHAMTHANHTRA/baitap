@@ -7,23 +7,22 @@ using FirstWebMVC.Models;
 
 namespace FirstWebMVC.Controllers
 {
-//Pham Thanh Tra - 2021050646
+//Pham Thanh Tra - 2021050543
     public class EmployeeController : Controller
     {
          public IActionResult Index()
             {
                 return View();
-//Pham Thanh Tra - 2021050646
+//Pham Thanh Tra - 2021050543
             }
             [HttpPost]
          public IActionResult Index(Employee emp)
             {
-
-                int TinhLuong = (emp.LuongCB) *  (emp.HeSoLuong) +emp.PhuCap;
-                string str1 = "FullName: " + " "+ emp.FullName + " " + "Luong: " + TinhLuong + "VND";
-                ViewBag.KetQuaTinhLuong = str1;
+//Pham Thanh Tra - 2021050543
+                string str = emp.FullName + "_" + emp.EmployeeID + "_" + emp.SoDienThoai +"_"+ emp.Address; 
+                ViewBag.KetQua = str;
                 return View();
-//Pham Thanh Tra - 2021050646
+//Pham Thanh Tra - 2021050543
             }
     }
 }
