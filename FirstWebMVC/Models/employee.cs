@@ -1,13 +1,11 @@
 using System.ComponentModel.DataAnnotations;
-//Pham Thanh Tra - 2021050646
-namespace FirstWebMVC.Models
-{
-    public class Employee 
+using Microsoft.JSInterop.Infrastructure;
+//Phạm Thanh Trà _ 2021050646
+namespace DemoMVC.Models
+    public class Employee : Person
     {
-        public string FullName { get; set; }
-        public int HeSoLuong { get; set; } 
-        public int LuongCB { get; set; }
-        public int PhuCap { get; set; }
-    //NPham Thanh Tra - 2021050646
+        
+       public string EmployeeID  { get; set; }
+       public int Age  { get; set; }
+       
     }
-}
