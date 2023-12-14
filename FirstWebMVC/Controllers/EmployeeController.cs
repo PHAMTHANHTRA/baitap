@@ -7,7 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Data;
 using DemoMVC.Models;
+<<<<<<< HEAD
 // Phạm Thanh Trà _ 2021050646
+=======
+//Pham Thanh Tra - MSV: 2021050646
+>>>>>>> 49e90db5098e2366ebc130ccf6e89cd123f00ab4
 namespace DemoMVC.Controllers
 {
     public class EmployeeController : Controller
@@ -82,8 +86,11 @@ namespace DemoMVC.Controllers
             }
             return View(employee);
         }
+<<<<<<< HEAD
         
         // Phạm Thanh Trà _ 2021050646
+=======
+>>>>>>> 49e90db5098e2366ebc130ccf6e89cd123f00ab4
 
         // POST: Employee/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -120,8 +127,11 @@ namespace DemoMVC.Controllers
             return View(employee);
         }
 
+<<<<<<< HEAD
         // Phạm Thanh Trà _ 2021050646
 
+=======
+>>>>>>> 49e90db5098e2366ebc130ccf6e89cd123f00ab4
         // GET: Employee/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
@@ -139,8 +149,11 @@ namespace DemoMVC.Controllers
 
             return View(employee);
         }
+<<<<<<< HEAD
        
         // Phạm Thanh Trà _ 2021050646
+=======
+>>>>>>> 49e90db5098e2366ebc130ccf6e89cd123f00ab4
 
         // POST: Employee/Delete/5
         [HttpPost, ActionName("Delete")]
