@@ -1,14 +1,19 @@
-using System.Net;
-using DemoMVC.Data;
-using DemoMVC.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-// Phạm Thanh Trà _ 2021050646
-namespace DemoMVC.Controllers
+using NetMVC.Data;
+using NetMVC.Models;
+
+namespace NetMVC.Controllers
 {
     public class PersonController : Controller
     {
         private readonly ApplicationDbContext _context;
+
         public PersonController(ApplicationDbContext context)
         {
             _context = context;
@@ -18,14 +23,19 @@ namespace DemoMVC.Controllers
             var model = await _context.Person.ToListAsync();
             return View(model);
         }
+
+        // GET: Person/Create
         public IActionResult Create()
         {
             return View();
         }
+
+        // POST: Person/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-         public async Task<IActionResult> Create([Bind("PersonID,FullName,Address")] Person person)
+        public async Task<IActionResult> Create([Bind("PersonID,FullName,Address")] Person person)
         {
             if (ModelState.IsValid)
             {
@@ -35,12 +45,15 @@ namespace DemoMVC.Controllers
             }
             return View(person);
         }
-            public async Task<IActionResult> Edit(string id)
+
+        // GET: Person/Edit/5
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Person == null)
             {
                 return NotFound();
             }
+
             var person = await _context.Person.FindAsync(id);
             if (person == null)
             {
@@ -49,9 +62,12 @@ namespace DemoMVC.Controllers
             return View(person);
         }
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-             public async Task<IActionResult> Edit(string id, [Bind("PersonID,FullName,Age,Address")] Person person)
+        // POST: Person/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("PersonID,FullName,Address")] Person person)
         {
             if (id != person.PersonID)
             {
@@ -80,9 +96,8 @@ namespace DemoMVC.Controllers
             }
             return View(person);
         }
-        
-        // Phạm Thanh Trà _ 2021050646
-        
+
+        // GET: Person/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.Person == null)
@@ -99,6 +114,8 @@ namespace DemoMVC.Controllers
 
             return View(person);
         }
+
+        // POST: Person/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
@@ -112,7 +129,7 @@ namespace DemoMVC.Controllers
             {
                 _context.Person.Remove(person);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -120,8 +137,6 @@ namespace DemoMVC.Controllers
         private bool PersonExists(string id)
         {
           return (_context.Person?.Any(e => e.PersonID == id)).GetValueOrDefault();
-        }      
+        }
     }
-    // Phạm Thanh Trà _ 2021050646
-
 }
